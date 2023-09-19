@@ -33,4 +33,8 @@ for item in range(1, 17):
 end_time = datetime.now()
 
 duration = end_time - start_time
-print(f'duration: {duration}')
+day = duration.seconds // 86400
+hours = duration.seconds // 3600
+minutes = duration.seconds // 60
+seconds = duration.seconds % 60
+print(f'Duration: Day:{day} Time:{hours}:{minutes}:{seconds} ')
